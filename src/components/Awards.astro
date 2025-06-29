@@ -1,0 +1,180 @@
+---
+---
+
+<section id="awards" class="section">
+  <div class="container">
+    <h2 class="section-title">Awards & Recognition</h2>
+    <div class="awards-grid">
+      <div class="award-item card">
+        <div class="award-icon">🏆</div>
+        <h3>Best Paper Award</h3>
+        <p class="award-details">International Conference of Data Science and Applications</p>
+        <p class="award-category">Category: Computer Vision</p>
+        <span class="award-date">2021</span>
+      </div>
+
+      <div class="award-item card">
+        <div class="award-icon">🥇</div>
+        <h3>Microsoft European Challenge - 1st Place</h3>
+        <p class="award-details">Built an AI application to assist and recognize student emotions in schools</p>
+        <span class="award-date">2020</span>
+      </div>
+
+      <div class="award-item card">
+        <div class="award-icon">🌟</div>
+        <h3>Women in Tech Global Award - Nominee</h3>
+        <p class="award-details">The Most Disruptive Women in Artificial Intelligence</p>
+        <span class="award-date">2020</span>
+      </div>
+
+      <div class="award-item card">
+        <div class="award-icon">🎓</div>
+        <h3>PhD Extraordinary Scholarship</h3>
+        <p class="award-details">Financed by Slovak Government for outstanding academic performance</p>
+        <span class="award-date">2018-2021</span>
+      </div>
+    </div>
+
+    <div class="research-stays">
+      <h3>International Research Stays</h3>
+      <div class="stays-grid">
+        <div class="stay-item card">
+          <h4>BMW Summer School</h4>
+          <p>Trust and Safety in Artificial Intelligence</p>
+          <p class="stay-location">Chiemsee, Germany</p>
+          <span class="stay-duration">5 days</span>
+        </div>
+        <div class="stay-item card">
+          <h4>BMW Summer School</h4>
+          <p>Artificial Intelligence and Urban Living</p>
+          <p class="stay-location">Bavaria, Germany</p>
+          <span class="stay-duration">5 days</span>
+        </div>
+        <div class="stay-item card">
+          <h4>JST-CREST/IEEE-RAS Spring School</h4>
+          <p>Social and Artificial Intelligence for User-Friendly Robots</p>
+          <p class="stay-location">Shonan Village, Japan</p>
+          <span class="stay-duration">1 week</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .award-item {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .award-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+  }
+
+  .award-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .award-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+
+  .award-details {
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+
+  .award-category {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .award-date {
+    background: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .research-stays {
+    margin-top: 4rem;
+  }
+
+  .research-stays h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .stays-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .stay-item {
+    text-align: left;
+  }
+
+  .stay-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+
+  .stay-item p {
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+  }
+
+  .stay-location {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+
+  .stay-duration {
+    background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .awards-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .stays-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
